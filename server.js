@@ -41,8 +41,8 @@ nunjucks.configure("templates", {
 
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
-	let code = req.query.code || "AAEBAf0GAA/OBpcHzAjiDP8PyBTmFrasAq6wAqW+Avi/Avm/AqLNAvjQAqbvAgA=",
-		name = req.query.name || "炉石传说卡组",
+	let code = req.query.code || "AAECAf0EHooBqwTFBMsE7QSNCJ+bA6CbA4qeA6GhA8KhA/yjA4ukA5KkA7+kA/KlA4SnA/SrA/qsA+yvA/CvA5GxA4S2A4y2A+G2A8O4A427A9y+A+a+A97EAwAA",
+		name = req.query.name || "宇宙法",
 		lang = req.query.lang || "zhCN",
 		lazy = req.query.lazy || "auto";
 	let deckstring = code.replace(/\s/g, "+");
